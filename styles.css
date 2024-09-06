@@ -1,0 +1,203 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-box {
+    width: 60%;
+    height: 400px;
+    background-color: #333;
+    padding: 20px;
+    margin-right: 20px;
+    border: 2px solid 	#CCFF00;
+    transition: all 0.3s ease;
+}
+
+.main-box .info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 35%;
+}
+
+.box {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid 	#CCFF00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box p {
+    margin-top: 10px;
+    
+}
+
+.box.active {
+    background-color: #222;
+    border-color: 	#CCFF00;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.contenedor {
+    padding: 20px;
+}
+
+/* Estructura de la sección de mascotas */
+.mascotas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menú de navegación */
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid 	#CCFF00;
+}
+
+.titulo h3 {
+    font-size: 20px;
+    color: 	#CCFF00;
+    margin: 10px 0;
+}
+
+.botones {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.botones li a {
+    color: 	#CCFF00;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.botones li a:hover {
+    color: #ffffff;
+}
+
+/* Contenedor de cajas */
+.footer_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Caja principal para la información */
+.main-box {
+    width: 30%;
+    height: 660px;
+    border: 2px solid 	#CCFF00;
+    background-color: #0c0c0c;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #d1d1d1;
+}
+
+.main-box h2 {
+    margin-bottom: 10px;
+}
+
+.main-box p {
+    color: #b3b3b3;
+}
+/* Contenedor de cajas secundarias */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 65%;
+}
+
+/* Estilo de las cajas */
+.box {
+    border: 2px solid 	#CCFF00;
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+.box:hover {
+    border-color: 	#CCFF00;
+}
+
+.box img {
+    width: 100%;
+    height: 75%;
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* Pie de página */
+.pie_pagina {
+    width: 100%;
+    border-top: 2px solid 	#CCFF00;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.pie_pagina a {
+    text-decoration: none;
+    color: 	#CCFF00;
+    font-size: 14px;
+}
+
+.pie_pagina a:hover {
+    text-decoration: underline;
+}
+
+ 
+
