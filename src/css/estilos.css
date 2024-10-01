@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; 
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo de la página principal */
+.principal {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.9), rgba(60, 60, 60, 0.9));
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Título de la página */
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titulo h1 {
+    color: #00bcd4; 
+    font-size: 32px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Botones */
+.botoncitos {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.botoncitos li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 50px; 
+    background: #1a1a2e; 
+    position: relative;
+    overflow: hidden; /* Para el efecto de fondo */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.botoncitos li a:hover {
+    background: #00bcd4; 
+    color: #000; 
+}
+
+.botoncitos li a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: transform 0.5s;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.botoncitos li a:hover::after {
+    transform: translate(-50%, -50%) scale(0.6); 
+}
+
+/* Estilo de la tarjeta */
+.perfil {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    background-color: #1e1e1e; 
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.avatar {
+    position: relative;
+    overflow: hidden; 
+}
+
+.avatar img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid #1a1a2e; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.avatar:hover img {
+    transform: scale(1.05); 
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.informacion h1 {
+    font-size: 28px;
+    color: #00bcd4; 
+    margin-bottom: 10px;
+}
+
+.informacion p {
+    font-size: 16px;
+    color: #e0e0e0; 
+    margin-bottom: 20px;
+}
+
+.atributos {
+    font-size: 14px;
+}
+
+.atributos p {
+    margin-bottom: 8px;
+}
+
+/* Estadísticas */
+.estadisticas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 90px;
+}
+
+.atributo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.atributo i {
+    font-size: 20px;
+    color: #e0e0e0; 
+    margin-right: 15px;
+}
+
+progress {
+    width: 250px;
+    height: 15px;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #424242; 
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #00bcd4; 
+    border-radius: 10px;
+}
+
+/* Pie de página */
+.pie_pagina {
+    border-top: 1px solid #424242;
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.redes {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.redes li a {
+    color: #00bcd4; 
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.redes li a:hover {
+    color: #1a1a2e; 
+}
